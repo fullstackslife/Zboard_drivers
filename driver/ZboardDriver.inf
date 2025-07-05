@@ -1,0 +1,28 @@
+; ZboardDriver.inf — Stub INF for SteelSeries Zboard (PW1USE1-B3ZBD01)
+; Assumes placeholder VID/PID until actual values confirmed
+
+[Version]
+Signature="$Windows NT$"
+Class=HIDClass
+ClassGuid={745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
+Provider=%ManufacturerName%
+CatalogFile=ZboardDriver.cat
+DriverVer=07/05/2025,1.0.0.0
+
+[Manufacturer]
+%ManufacturerName%=ZboardDevices,NTamd64
+
+[ZboardDevices.NTamd64]
+%ZboardDeviceName%=Zboard_Install, USB\VID_0AC8&PID_F000 ; <-- Replace with actual VID/PID
+
+[Zboard_Install]
+Include=hidusb.inf
+Needs=HID_Inst
+
+[Zboard_Install.Services]
+Include=hidusb.inf
+Needs=HID_Inst.Services
+
+[Strings]
+ManufacturerName="Zboard Open Source"
+ZboardDeviceName="SteelSeries Zboard (Community Driver)" 

@@ -965,3 +965,128 @@ Please start on task 1.1 and use @process-task-list.mdc
 
 ---
 
+Perfect — you're asking Cursor not only to **build the driver**, but to **structure the entire repo to look professional, inviting, and persuasive**, with a clear **call-to-action (CTA) to SteelSeries**. Here's a fully detailed guide and command plan to make Cursor do just that.
+
+---
+
+## ✅ Step-by-Step Plan to Have Cursor Build Out the Repo for Public Launch
+
+You'll guide Cursor through a **repo beautification and advocacy phase** after it finishes (or while it's working through) the core driver tasks.
+
+---
+
+### 🧩 1. Tell Cursor Your Intent
+
+Once Cursor has completed `task 1.5` or similar, tell it:
+
+```text
+New task: Build out the public-facing structure of this repo to advocate for SteelSeries collaboration and attract community contributors.
+Use @process-task-list.mdc
+```
+
+Then give it this Markdown list as your new task input:
+
+```markdown
+## 7. Repo Beautification and Advocacy Layer
+
+### 7.1 Polish and finalize README.md
+- Include summary, install instructions, screenshot of keyboard, and CTA to SteelSeries
+- Add link to Amazon listing and legacy installer
+- Mention test mode clearly for Windows 11
+- Use badges (build, license, WDK version)
+
+### 7.2 Create CONTRIBUTING.md
+- Explain how users can contribute:
+  - Submit USB descriptor logs
+  - Report keyset behavior
+  - Help with layout profiles
+- Encourage creating GitHub issues
+- Tag SteelSeries devs if appropriate
+
+### 7.3 Add LICENSE
+- MIT license as default
+- Include comment: “This project is a preservation effort”
+
+### 7.4 Add GitHub Issue Templates
+- One for bug reports (e.g. keys not working)
+- One for new keyset profile submissions
+- One for general discussion
+
+### 7.5 Create .github/FUNDING.yml
+- Add GitHub Sponsors (if desired) or link to OpenCollective/Ko-fi
+
+### 7.6 Add .mdc shortcut for advocacy post
+- File: `devtools/post-to-steelseries.mdc`
+- Draft GitHub issue/comment addressed to SteelSeries
+```
+
+---
+
+### 📝 Sample Advocacy CTA (for README or GitHub issue)
+
+```md
+## 📣 Call to SteelSeries
+
+We love this keyboard. It was ahead of its time, and we’re preserving it.
+
+👉 If SteelSeries has any docs, layouts, or USB specs they can share — it would make this project better, faster, and more accurate.
+
+This is a 100% community-run initiative. No profit. No branding abuse. Just appreciation for a device that deserves to live on.
+
+📩 Please open a GitHub Issue or email us at zboard@preserveinput.org if you’re open to helping.
+```
+
+---
+
+### 📂 Directory Structure Cursor Should Generate
+
+```plaintext
+/
+├── README.md               ✅ public pitch + install
+├── CONTRIBUTING.md         ✅ invite help
+├── LICENSE                 ✅ MIT
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   ├── keyset_profile.md
+│   │   └── general.md
+│   └── FUNDING.yml
+├── driver/
+│   ├── ZboardDriver.inf
+│   ├── ZboardDriver.cat
+│   └── ZboardDriver.sys (eventually)
+├── usb-descriptors/
+├── app/
+├── devtools/
+│   ├── create-prd.mdc
+│   ├── generate-tasks.mdc
+│   ├── process-task-list.mdc
+│   └── post-to-steelseries.mdc
+```
+
+---
+
+## 🧠 Suggested Cursor Instruction Block
+
+In Cursor, say:
+
+```text
+Create and execute the following task:
+
+Task 7. Repo Beautification and Advocacy
+Use @process-task-list.mdc
+```
+
+Then paste in the full task list above.
+
+---
+
+## ⚡ Want Me to Generate the `post-to-steelseries.mdc` or Issue Templates Now?
+
+I can do that in this chat so you can just drop them into `/devtools/` or `.github/`. Let me know and I’ll generate:
+
+* ✅ `post-to-steelseries.mdc`
+* ✅ `bug_report.md`, `keyset_profile.md`, `general.md`
+* ✅ `CONTRIBUTING.md`
+
+Would you like them all now?

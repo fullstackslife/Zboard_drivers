@@ -1,0 +1,42 @@
+# 🧠 Purpose: Create a public GitHub Issue directed to SteelSeries to request support
+
+Create a Markdown-formatted GitHub Issue with the following content:
+
+---
+
+**Title:** Legacy Zboard Driver Revival — Request for Technical Docs
+
+**Body:**
+
+Hello SteelSeries team,
+
+We're a group of developers, gamers, and hardware preservationists working on an open-source Windows 11 driver for the iconic **Zboard Gaming Keyboard** (model: PW1USE1-B3ZBD01).
+
+🔧 Why?
+This keyboard was ahead of its time — modular, programmable, and beloved by gamers. Sadly, it's no longer supported on modern systems. We're aiming to fix that.
+
+🎯 What We've Done:
+- Built a working INF+CAT HID driver
+- Added modular keyset support
+- Released it on GitHub under MIT license
+- Reached out to the community for USB descriptor logs
+
+💬 How You Can Help:
+If SteelSeries still holds:
+- USB descriptor docs
+- Old layouts
+- Firmware interface specs
+…even partial, it would greatly accelerate this restoration.
+
+🤝 No obligations, no branding misuse — just love for a great device.
+
+Thanks for considering it!
+
+GitHub: [repo URL]
+Contact: [maintainer email or GitHub handle]
+
+---
+description:
+globs:
+alwaysApply: false
+---
